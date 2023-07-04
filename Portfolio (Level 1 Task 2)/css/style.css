@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+@import url("https://fonts.googleapis.com/css2?family=Chokokutai&display=swap");
+
+.header {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-menu {
+  display: none;
+  right: 2rem;
+  top: 60px;
+  width: unset;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-bottom: 5px;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.dropdown-menu a:hover {
+  color: yellow;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+}
+
+.dropdown-menu .cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  padding: 10px;
+}
+
+.cta button {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.cta:hover {
+  background-color: #000;
+}
+
+.menu {
+  color: red;
+}
+
+#open-menu,
+#close-menu {
+  display: none;
+}
+
+.header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-family: "Chokokutai", sans-serif;
+}
+
+strong {
+  color: red;
+}
+
+.header a,
+.about-title a,
+.contact a {
+  padding: 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.header .contact-btn,
+.contact .contact-btn {
+  color: red;
+}
+
+.links a:hover {
+  color: red;
+}
+
+.contact-btn {
+  border: 1px solid red;
+  font-size: small;
+}
+
+.contact-btn:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.showcase {
+  height: 90vh;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.box {
+  height: 90vh;
+}
+
+.box-content .content {
+  padding: 50% 0 20px 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+.content h1 {
+  font-family: "Chokokutai", sans-serif;
+  font-size: 2rem;
+  color: #000;
+}
+
+.content .contact-btn {
+  margin-top: 2rem;
+  border: 1px solid red;
+  color: #fff;
+  background: red;
+  transition: all 0.3s ease 0s;
+  width: 6rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.content .project-btn {
+  color: #000;
+  border: none;
+}
+
+.content .project-btn:hover {
+  border-bottom: 2px solid #000;
+}
+
+.content .contact-btn:hover {
+  color: red;
+  background-color: transparent;
+  border: 1px solid red;
+}
+
+.content-skills {
+  background-color: #000;
+  margin-top: 1rem;
+  height: 100vh;
+  color: #fff;
+  padding: 20px;
+}
+
+.content-skills li {
+  list-style-type: none;
+  padding: 10px 10px 10px 0;
+  margin-right: 10px;
+  color: darkgrey;
+  border-bottom: 1px solid darkgrey;
+}
+
+.skill1,
+.skill2 {
+  display: inline-block;
+}
+
+.content-skills li {
+  color: #fff;
+}
+
+.content-skills .contact-btn {
+  border: none;
+  background-color: yellow;
+  color: #000;
+}
+
+.content-skills .contact-btn:hover {
+  border: 1px solid yellow;
+  color: yellow;
+}
+
+.content-skills strong {
+  color: yellow;
+}
+
+.showcase a {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.item-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about {
+  background-color: #000;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  padding-top: 8rem;
+}
+
+.about h5 {
+  color: yellow;
+  margin-bottom: 1rem;
+}
+
+.about h2 {
+  margin-bottom: 3rem;
+}
+
+.about .contact-btn {
+  border: none;
+  background-color: yellow;
+  color: #000;
+  transition: all 0.3s ease 0s;
+  width: 6rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.about .contact-btn:hover {
+  border: 1px solid yellow;
+  background: transparent;
+  color: yellow;
+}
+
+.about-title strong {
+  color: yellow;
+}
+
+.about a {
+  text-decoration: none;
+}
+
+.line-1 {
+  width: 100px;
+  height: 2px;
+  background: darkgrey;
+  display: inline-block;
+}
+
+.line-2 {
+  width: 80px;
+  height: 2px;
+  background: darkgrey;
+  display: inline-block;
+}
+
+.line-3 {
+  width: 60px;
+  height: 2px;
+  background: darkgrey;
+  display: inline-block;
+}
+
+.line {
+  line-height: 8px;
+  float: right;
+}
+
+.about-desc .line {
+  float: left;
+}
+
+.about-me {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.my-skills-title {
+  margin-top: 3rem;
+}
+
+.my-skills-title h4 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.my-skills .grid {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-skills .grid span {
+  font-family: "Chokokutai", sans-serif;
+}
+
+.my-skills .grid h6 {
+  margin-top: 1rem;
+}
+
+.frontend-skills {
+  border-right: 2px solid red;
+  padding-right: 20px;
+}
+
+.skills-flex {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills-flex h6 {
+  border: 1px solid red;
+  color: red;
+  padding: 10px;
+}
+
+.skills-flex h6:hover {
+  background-color: red;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.portfolio {
+  background-color: #000;
+  color: #fff;
+}
+
+.responsive-portfolio {
+  display: none;
+}
+
+.portfolio h5 {
+  color: yellow;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio .line {
+  float: left;
+}
+
+.portfolio .line-1,
+.portfolio .line-2,
+.portfolio .line-3 {
+  background-color: yellow;
+}
+
+.portfolio-content {
+  margin-top: 2rem;
+  display: flex;
+  width: 80vw;
+  overflow: hidden;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  border: 1px solid #000;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  color: red;
+  font-family: "Chokokutai", sans-serif;
+}
+
+.panel .panel-details {
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.panel .panel-details.even,
+.panel .panel-details.even .links i {
+  color: #000;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel .panel-details h6,
+.panel .panel-details .links i {
+  display: none;
+}
+
+.panel.active .panel-details h6,
+.panel.active .panel-details .links i {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel.active h3 {
+  margin-bottom: 1.5rem;
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel-details .links {
+  display: flex;
+}
+
+.panel.active .panel-details .links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.panel-details .links i {
+  margin-right: 2rem;
+  margin-top: 5px;
+}
+
+.panel-details i:hover {
+  color: red;
+}
+
+.responsive-portfolio .portfolio-title h4 {
+  color: yellow;
+}
+
+.responsive-portfolio .portfolio-title h2 {
+  color: #fff;
+}
+
+.responsive-portfolio-content {
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.work-items {
+  border: 1px solid darkgray;
+  padding: 20px;
+  height: 18.5em;
+}
+
+.work-details h4 {
+  color: yellow;
+}
+
+.work-details h6 {
+  color: #fff;
+}
+
+.work-details {
+  margin-top: 10px;
+}
+
+.img-area {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-area img {
+  width: 100%;
+  height: auto;
+}
+
+.work-details button {
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.work-details button:hover {
+  border: 1px solid grey;
+  color: grey;
+}
+
+.contact-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact h4 {
+  color: red;
+  margin-top: 3rem;
+}
+
+.contact p {
+  margin-top: 10px;
+}
+
+.contact a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+.contact-area {
+  margin-top: 1rem;
+}
+
+form {
+  display: block;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border: solid #000 1px;
+  background-color: transparent;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  width: 30rem;
+  margin-bottom: 10px;
+}
+
+.submit {
+  cursor: pointer;
+}
+
+.submit:hover {
+  border-color: red;
+  color: red;
+}
+
+input:focus {
+  outline: none;
+  border-color: red;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: red;
+}
+
+.hidden {
+  display: hidden;
+}
+
+::placeholder {
+  color: #000;
+  font-family: "Lato", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  margin-top: 2rem;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+footer .social {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer i {
+  color: yellow;
+}

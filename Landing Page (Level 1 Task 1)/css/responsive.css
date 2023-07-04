@@ -1,0 +1,316 @@
+:root {
+  --primary-color: rgb(53, 1, 53);
+  --secondary-color: #ff5733;
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .users .grid,
+  .tools .grid,
+  .footer .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .tools .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav,
+  header button {
+    display: none;
+  }
+
+  .dropdown-menu {
+    left: 2rem;
+    width: unset;
+    margin: 0 10px 10px;
+  }
+
+  .dropdown-menu ul li {
+    border-bottom: 1px solid var(--primary-color);
+  }
+
+  header .fa-bars {
+    display: block;
+  }
+
+  .showcase-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .showcase-details h1 {
+    font-size: 4rem;
+  }
+
+  .showcase-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .showcase-img img {
+    width: 40%;
+    display: block;
+  }
+
+  .showcase-img img:nth-child(even) {
+    display: none;
+  }
+
+  .prospects-title {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .prospects-img img {
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+  }
+
+  .achievements {
+    height: 90vh;
+  }
+
+  .achievements-title {
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .achievements-title h2 {
+    margin-bottom: 40px;
+  }
+
+  .achievements-desc .desc {
+    text-align: center;
+  }
+
+  .achievement-img1 {
+    display: none;
+  }
+
+  .achievement-img2 {
+    width: 60%;
+    margin-top: 0;
+    margin-right: 20%;
+    position: static;
+    margin-bottom: 0;
+  }
+
+  .achievements .achieved .grid {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .teams {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .teams .team-title h6 {
+    margin-bottom: 20px;
+  }
+
+  .teams .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-card .card {
+    margin-left: 18px;
+    margin-top: 0;
+  }
+
+  .footer-title {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .footer-content {
+    margin-top: 12rem;
+  }
+
+  .footer .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .showcase-details h1 {
+    font-size: 3rem;
+  }
+
+  .showcase-img img {
+    width: 80%;
+  }
+
+  .showcase-img img:last-child {
+    display: none;
+  }
+
+  .prospects-title h2 {
+    font-size: 2rem;
+  }
+
+  .prospects-img img {
+    width: 50%;
+  }
+
+  .fa-ul li {
+    text-align: justify;
+  }
+
+  .tools {
+    height: 60rem;
+  }
+
+  .tools .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievements {
+    background-image: url(/image/team2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--primary-color);
+  }
+
+  .achievements-title img {
+    display: none;
+  }
+
+  .teams .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team-card .card {
+    margin-left: 25px;
+    margin-top: 0;
+    height: 7rem;
+    width: 18rem;
+    padding: 10px;
+  }
+
+  .card-2 {
+    margin-top: 2.5rem;
+  }
+
+  .footer-title {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .footer-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .footer-content {
+    margin-top: 10rem;
+  }
+
+  input {
+    height: 2rem;
+    width: 15rem;
+  }
+
+  .footer .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer .footer-end h6 {
+    font-size: 0.5rem;
+  }
+
+  footer .flex {
+    letter-spacing: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+  .showcase-details h1 {
+    font-size: 2.5rem;
+  }
+
+  .showcase-details .showcase-btn {
+    margin-top: 10px;
+  }
+
+  .showcase-details .showcase-btn button {
+    margin-bottom: 8px;
+  }
+
+  .tools {
+    height: 95rem;
+  }
+
+  .tools .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .teams .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .achievements-title h2 {
+    font-size: 2.5rem;
+  }
+
+  input {
+    width: 13rem;
+  }
+
+  .footer .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+  .showcase {
+    overflow: hidden;
+  }
+  .showcase-details h1 {
+    font-size: 2rem;
+  }
+
+  .achievements {
+    overflow: hidden;
+  }
+
+  .achievements-title h2 {
+    font-size: 2rem;
+  }
+
+  .achieved i {
+    font-size: 1.5rem;
+  }
+
+  .teams {
+    overflow: hidden;
+  }
+
+  .team-card .card {
+    width: 16rem;
+    padding: 7px;
+  }
+
+  .card-2 {
+    width: 18rem;
+  }
+
+  input {
+    width: 11rem;
+  }
+
+  .footer .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

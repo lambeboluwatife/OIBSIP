@@ -1,0 +1,167 @@
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .about .grid,
+  .contact .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  #open-menu,
+  #close-menu {
+    display: none;
+  }
+
+  .showcase {
+    padding: 0 5px;
+    background-color: #000;
+  }
+
+  .showcase .content h1,
+  .showcase .content h6,
+  .showcase .content .project-btn {
+    color: #fff;
+  }
+
+  .showcase .content .project-btn:hover {
+    color: yellow;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .box-content {
+    background-image: url(/images/Bolu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+
+  .content-skills {
+    display: none;
+  }
+
+  .about {
+    height: 70vh;
+  }
+
+  .panel h3 {
+    bottom: 70px;
+  }
+
+  .frontend-skills {
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+    border-right: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .responsive-portfolio .grid,
+  .my-skills .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .container {
+    max-width: 500px;
+  }
+
+  nav,
+  .header .contact-btn {
+    display: none;
+  }
+
+  #open-menu {
+    display: block;
+    color: red;
+  }
+
+  .about {
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .about-desc .about-me {
+    line-height: 1.2;
+  }
+
+  .my-skills {
+    overflow: hidden;
+  }
+
+  .my-skills-title {
+    margin-top: 1rem;
+  }
+
+  .backend-skills {
+    border-bottom: 2px solid yellow;
+    padding-bottom: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 23rem;
+  }
+
+  .portfolio {
+    display: none;
+  }
+
+  .responsive-portfolio {
+    display: block;
+    background-color: #000;
+    padding: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+  .about-desc .about-me {
+    line-height: 1.1;
+  }
+
+  .img-text a {
+    display: inline;
+    width: 2px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 20rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+  .about h5 {
+    margin-bottom: 0.5rem;
+  }
+
+  .about h2 {
+    margin-bottom: 1rem;
+  }
+
+  .about .line {
+    display: none;
+  }
+
+  .img-text a {
+    display: inline;
+    width: 2px;
+  }
+
+  .my-skills .skills-flex h6 {
+    padding: 5px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 18rem;
+  }
+}

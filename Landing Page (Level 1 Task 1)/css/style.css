@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+:root {
+  --primary-color: rgb(53, 1, 53);
+  --secondary-color: #ff5733;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  height: 10vh;
+  background-color: var(--primary-color);
+}
+
+.logo {
+  cursor: pointer;
+  color: #fff;
+}
+
+.fa-envelope {
+  color: var(--secondary-color);
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: var(--secondary-color);
+}
+
+header .fa-bars {
+  display: none;
+  transition: all ease-in 1s;
+}
+
+header .fa-times {
+  display: none;
+  transition: all ease-in 1s;
+}
+
+header i:hover {
+  color: var(--secondary-color);
+}
+
+button,
+.btn2,
+.btn3 {
+  padding: 9px 25px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn2 {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.btn3 {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.btn2:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: #fff;
+}
+
+.btn3:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: #fff;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+hr {
+  background-color: darkgray;
+  border: 0.1px solid darkgray;
+}
+
+.dropdown-menu {
+  display: none;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu li {
+  list-style: none;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu li a {
+  color: var(--primary-color);
+}
+
+.dropdown-menu li a:hover {
+  background-color: var(--primary-color);
+}
+
+.dropdown-menu .cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
+
+.cta button {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.cta:hover {
+  background-color: #fff;
+}
+
+.showcase {
+  height: 90vh;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.showcase-details {
+  animation: slideInFromLeft 2s ease-in;
+}
+
+.showcase-details h1 {
+  font-size: 3rem;
+  font-family: "Russo One", sans-serif;
+  margin-bottom: 10px;
+}
+
+.showcase-details h6 {
+  line-height: 20px;
+}
+
+.showcase-btn {
+  margin-top: 30px;
+}
+
+.showcase-btn a {
+  margin-right: 20px;
+}
+
+.showcase-img {
+  margin-top: 1rem;
+  animation: slideInFromTop 2s ease-in;
+}
+
+.showcase-img img {
+  width: 50%;
+}
+
+img:last-child {
+  margin-left: 150px;
+}
+
+img:nth-child(even) {
+  float: right;
+}
+
+.users {
+  margin-top: 40px;
+  color: black;
+}
+
+.user {
+  text-align: center;
+  color: darkgray;
+  cursor: default;
+}
+
+.user:hover {
+  color: #900c3f;
+}
+
+.users-count {
+  border-right: 2px solid darkgray;
+}
+
+.prospects-title h2 {
+  font-size: 2rem;
+  font-family: "Russo One", sans-serif;
+}
+
+.prospects-title h6 {
+  color: darkgray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.prospects-title li {
+  color: darkgray;
+}
+
+.prospects-title ul {
+  list-style-type: none;
+}
+
+.prospects-img img {
+  width: 50%;
+  text-align: center;
+}
+
+.fa-check {
+  color: var(--secondary-color);
+}
+
+.tools {
+  color: black;
+  background-color: var(--secondary-color);
+  height: 90vh;
+  margin-top: 30px;
+}
+
+.tools h2 {
+  color: rgb(53, 1, 53);
+  font-size: 2rem;
+  font-family: "Russo One", sans-serif;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.tools h6 {
+  color: #fff;
+}
+
+.tools-heading {
+  text-align: center;
+}
+
+.card img {
+  width: 15%;
+}
+
+.card h6 {
+  color: darkgray;
+}
+
+.tools-cards .card:hover {
+  border: 2px solid var(--primary-color);
+  transition: all ease-in;
+}
+
+.tools-cards .card:last-child {
+  background-color: rgb(53, 1, 53);
+  color: #fff;
+}
+
+.tools-cards .card:last-child a h6 {
+  color: #fff;
+}
+
+.tools-cards .card:last-child:hover {
+  border: 2px solid #fff;
+}
+
+.tools .grid {
+  gap: 0;
+}
+
+strong {
+  color: var(--primary-color);
+  font-weight: bolder;
+}
+
+.card h6 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.card a h6 {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.achievements {
+  background-color: var(--primary-color);
+  height: 90vh;
+}
+
+.achievements-title {
+  font-size: 1.5rem;
+  font-family: "Russo One", sans-serif;
+}
+
+.achievements-desc .desc {
+  margin-bottom: 50px;
+  line-height: 20px;
+}
+
+.achievements-desc i {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.achievements-content h2 {
+  font-weight: bolder;
+  font-family: "Russo One", sans-serif;
+}
+
+.achievement-img1 {
+  width: 25%;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.achievement-img2 {
+  width: 60%;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  margin-top: 25%;
+}
+
+.achievement-img2:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 1s;
+}
+
+.achievement-img1:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 1s;
+}
+
+.teams {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.team-title h2 {
+  margin-top: 40px;
+  color: var(--primary-color);
+  font-family: "Russo One", sans-serif;
+}
+
+.team-title h6 {
+  margin-top: 10px;
+  color: darkgray;
+  line-height: 20px;
+}
+
+.card-2 {
+  background-color: var(--secondary-color);
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 20rem;
+  height: 5.5rem;
+  margin: 4% 10px 10px 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.team-card .card {
+  position: relative;
+  z-index: 2;
+  margin-left: 23px;
+  text-align: left;
+  height: 7rem;
+  line-height: 1.5;
+  padding-top: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.team-card .card:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.team-card i {
+  float: left;
+  color: var(--primary-color);
+}
+
+.team-card .card-title {
+  line-height: 0.3;
+  margin: 20px 0 20px 3.5rem;
+}
+
+.team-card .card-title h6:last-child {
+  font-size: xx-small;
+}
+
+.team-card .card-title h1 {
+  position: absolute;
+  color: var(--secondary-color);
+  z-index: 1;
+  padding-top: 2rem;
+  left: 70%;
+  font-size: 10rem;
+  font-family: "Catamaran", sans-serif;
+  opacity: 0.3;
+}
+
+.card .card-desc {
+  position: relative;
+  z-index: 2;
+  color: #000;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  margin-top: 6rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.footer-card .card {
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.footer-title {
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+::placeholder {
+  font-family: "Russo One", sans-serif;
+}
+
+input {
+  height: 2.5rem;
+  width: 30rem;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-family: "Russo One", sans-serif;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid var(--secondary-color);
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: var(--secondary-color);
+}
+
+.footer-content {
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li h6 {
+  color: var(--primary-color);
+  padding: 10px;
+}
+
+footer ul li h6:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+footer .contact h2 i {
+  color: var(--primary-color);
+}
+
+footer .contact h6 {
+  padding: 5px;
+}
+
+footer .flex {
+  justify-content: space-between;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
