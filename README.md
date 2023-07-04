@@ -9,6 +9,6 @@ complete any one (either Level 1 or Level 2 or Level 3) as per your
 convenience for successful completion of internship.
 
 #### Tasks Links (Live Sites)
-Task 1: https://landing-page-roan-six.vercel.app/
-Task 2: https://portfolio-gamma-three-43.vercel.app/
-Task 3: https://converter-ochre.vercel.app/
+- Task 1: https://landing-page-roan-six.vercel.app/
+- Task 2: https://portfolio-gamma-three-43.vercel.app/
+- Task 3: https://converter-ochre.vercel.app/
